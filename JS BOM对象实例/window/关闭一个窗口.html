@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="myOpen()">open</button>
+		<button onclick="myClose()">close</button>
+		<script>
+			var mywin;
+			function myOpen(){
+				mywin=window.open('','','width=200,height=200');
+			}
+			function myClose(){
+				mywin.close();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>		
+		<button onclick="numbers.forEach(myFunction)">button</button>
+		<p id="p1"></p>
+		<script>
+			var p1=document.getElementById("p1");
+			var numbers=[12,23,32,14,16];
+			function myFunction(item,index){
+				p1.innerHTML=p1.innerHTML+"<br/>"+index+" : "+item;
+			}
+		</script>
+	</body>
+</html>

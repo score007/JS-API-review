@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="p1"></p>
+		<script>
+			var p1=document.getElementById("p1");
+			var x= new Date();
+			function now(){
+				x=new Date();
+				var a=x.getHours();
+				var b=x.getMinutes();
+				var c=x.getSeconds();
+				a=checkNow(a);
+				b=checkNow(b);
+				c=checkNow(c);
+				p1.innerHTML=a+":"+b+":"+c;
+			}
+			function checkNow(i){
+				if(i<10){
+					i="0"+i;
+				}
+				return i;
+			}
+			
+			setInterval(now,1000);
+			
+		</script>
+	</body>
+</html>

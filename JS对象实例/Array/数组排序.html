@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var x=["hdy","is","a","good","boy"];
+			document.write(x.sort()+"<br/>");
+			var y=[1,2,3,4,8,7,6,5];
+			document.writeln(y.sort(function(a,b){
+				return a-b;
+			})+"<br />");
+			document.writeln(y.sort(function(a,b){
+				return b-a;
+			})+"<br />");
+		</script>
+	</body>
+</html>
