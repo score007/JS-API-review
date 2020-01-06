@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="myTimeOut()">Timeout</button>
+		<button onclick="myInterval()">Interval</button>
+		<button onclick="clearTime()">clearTi</button>
+		<button onclick="clearInt()">clearIn</button>
+		<p id="p1"></p>
+		<script>
+		var a,b;
+		var p1=document.getElementById('p1');
+			function myTimeOut(){
+				a=window.setTimeout(function(){alert("3秒过去了")},3000);
+			}
+			function myInterval(){
+				b=window.setInterval(function(){var now=new Date();
+					var a=now.getHours();
+					var b=now.getMinutes();
+					var c=now.getSeconds();
+					if(a<10){
+						a="0"+a;
+					}
+					if(b<10){
+						b="0"+b;
+					}
+					if(c<10){
+						c="0"+c;
+					}
+				p1.innerHTML=a+":"+b+":"+c},1000);
+			}
+			
+			function clearTime(){
+				window.clearTimeout(a);
+			}
+			function clearInt(){
+				window.clearInterval(b);
+			}			
+			</script>
+	</body>
+</html>

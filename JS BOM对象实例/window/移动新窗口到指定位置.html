@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="myOpen()">open</button>
+		<button onclick="myMove()">move</button>
+		<script>
+			var a;
+			function myOpen(){
+				a=window.open('','','width=400,height=200');
+			}
+			function myMove(){
+				a.moveTo(450,450);
+				a.focus();
+			}
+		</script>
+	</body>
+</html>

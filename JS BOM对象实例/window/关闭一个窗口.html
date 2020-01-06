@@ -10,10 +10,13 @@
 		<script>
 			var mywin;
 			function myOpen(){
-				mywin=window.open('','','width=200,height=200');
+				mywin=window.open('','123','width=200,height=200');
+				alert(mywin.opener);
+				alert(mywin.name);
 			}
 			function myClose(){
 				mywin.close();
+				alert(mywin.closed);
 			}
 		</script>
 	</body>

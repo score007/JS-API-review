@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="myResizeBy()">resizeby</button>	
+		<button onclick="myResizeTo()">resizeto</button>	
+		<button onclick="myOpen()">open</button>
+		<script>
+			var a;
+			function myOpen(){
+				a=window.open('','','width=400,height=200');
+			}
+			function myResizeBy(){
+				a.resizeBy(450,450);//内容为新窗口和旧窗口大小之差
+				a.focus();
+			}
+			function myResizeTo(){
+				a.resizeTo(450,450);//内容为新窗口高宽
+				a.focus();
+			}
+		</script>
+	</body>
+</html>
