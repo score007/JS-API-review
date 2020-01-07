@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var b="d213W0iu!foi @w24e ";
+			var a=/\w/g;
+			var a=/\W/g;//非单词
+			var a=/\d/g;
+			var a=/\D/g;//非数字
+			var a=/\b/g;
+			var a=/\B/g;//非单词边界
+			var a=/\s/g;
+			var a=/\S/g;//非空白
+			var a=/\0/g;//找NULL
+			var a=/\n/g;//找换行
+			var a=/\127/g;//八进制
+			var a=/\x57/g;//十六进制
+			document.write(b.match(a));
+		</script>
+	</body>
+</html>
