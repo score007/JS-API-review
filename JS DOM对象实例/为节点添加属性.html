@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.red{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">我是谁？</p>
+		<script>
+			var p1=document.getElementById("p1");
+			var atr= document.createAttribute("class");
+			atr.value="red";
+			p1.setAttributeNode(atr);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var p1=document.createElement("p");
+			var p=document.createTextNode("我是一个文本节点");
+			p1.appendChild(p);
+			var body=document.getElementsByTagName("body")[0];
+			body.appendChild(p1);
+		</script>
+	</body>
+</html>
