@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="fo()">forward</button>
+		<button onclick="ba()">back</button>
+		<button onclick="go()">go</button>
+		<script>
+			function fo(){
+				history.forward();
+			}
+			function ba(){
+				history.back();
+			}
+			function go(){
+				history.go(-2);
+			};
+		</script>
+	</body>
+</html>
