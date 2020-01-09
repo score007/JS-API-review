@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="input" /><br />
+		<script>
+			var input=document.getElementsByName("input")[0];
+			document.write(input.attributes[0].value+"<br />");
+			document.write(input.attributes[1].value+"<br />");
+			document.write(document.body.childNodes.length+"<br />");
+			document.write(document.body.children[0].tagName+"<br />");
+			document.write(document.body.children[1].tagName+"<br />");
+			document.write(document.body.children[2].tagName+"<br />");
+			document.write(document.body.children[3].tagName+"<br />");
+			document.write(document.body.children[4].tagName+"<br />");
+			document.write(document.body.children[5].tagName+"<br />");
+		</script>
+	</body>
+</html>
